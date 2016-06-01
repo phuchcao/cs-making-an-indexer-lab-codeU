@@ -36,8 +36,11 @@ public class TermCounter {
 	 * @return
 	 */
 	public int size() {
-        // TODO: fill this in.
-		return -1;
+		int sum = 0;
+		for (Map.Entry<String, Integer> item: map.entrySet()){
+			sum += item.getValue();
+		}
+		return sum;
 	}
 
 	/**
